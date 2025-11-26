@@ -1,12 +1,13 @@
 public class PengunjungCafe07 {
 
-    //varargs
+    // varargs
     public static void daftarPengunjung(String... namaPengunjung) {
-        System.out.println("=== Daftar Pengunjung ===");
-        for (int i = 0; i < namaPengunjung.length; i++) {
-            System.out.println((i + 1) + ". " + namaPengunjung[i]);
+        System.out.println("=== Daftar Pengunjung (for-each) ===");
+        int nomor = 1;
+        for (String nama : namaPengunjung) {
+            System.out.println(nomor + ". " + nama);
+            nomor++;
         }
-        System.out.println("==========================");
     }
 
     public static void main(String[] args) {
